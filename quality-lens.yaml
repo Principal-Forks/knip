@@ -15,7 +15,7 @@ lenses:
   knip: pnpm exec --dir packages/knip knip --directory ../.. --reporter json
 
   # Node.js native test runner with coverage
-  node-test: pnpm exec --dir packages/knip tsx --test --experimental-test-coverage test/*.test.ts test/**/*.test.ts
+  node-test: cd packages/knip && pnpm exec tsx --test --experimental-test-coverage 'test/*.test.ts' 'test/**/*.test.ts'
 
 # Exclude build outputs, docs, and test fixtures
 exclude:
