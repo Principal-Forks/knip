@@ -14,10 +14,13 @@ lenses:
   # Dead code analysis (knip on itself)
   knip: pnpm exec --dir packages/knip knip --directory ../.. --reporter json
 
-# Exclude build outputs and docs
+# Exclude build outputs, docs, and test fixtures
 exclude:
   - "**/dist/**"
   - "**/tmp/**"
   - "packages/docs/.astro/**"
+  - "packages/docs/**"
+  - "packages/knip/fixtures/**"
+  - "packages/knip/test/**"
   - "templates/**"
   - "**/node_modules/**"
