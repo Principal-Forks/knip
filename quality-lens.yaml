@@ -8,8 +8,8 @@ lenses:
   # Formatting with Biome
   biome-format: pnpm exec biome format . --reporter=json
 
-  # Type checking
-  typescript: pnpm exec --dir packages/knip tsc --noEmit
+  # Type checking (--listFiles needed for complete file metrics)
+  typescript: pnpm exec --dir packages/knip tsc --noEmit --listFiles
 
   # Dead code analysis (knip on itself)
   knip: pnpm exec --dir packages/knip knip --directory ../.. --reporter json
