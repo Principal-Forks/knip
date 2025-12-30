@@ -14,8 +14,10 @@ lenses:
   # Dead code analysis (knip on itself)
   knip: pnpm exec --dir packages/knip knip --directory ../.. --reporter json
 
-  # Node.js native test runner with coverage
-  node-test: cd packages/knip && pnpm exec tsx --test --experimental-test-coverage 'test/*.test.ts' 'test/**/*.test.ts'
+  # Node.js native test runner with coverage (root only - tests are centralized)
+  node-test:
+    command: cd packages/knip && pnpm exec tsx --test --experimental-test-coverage 'test/*.test.ts' 'test/**/*.test.ts'
+    scope: root
 
 # Exclude build outputs, docs, and test fixtures
 exclude:
