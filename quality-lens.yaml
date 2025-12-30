@@ -1,0 +1,23 @@
+# Quality Lens Configuration for knip
+# Uses Biome for linting and formatting
+
+lenses:
+  # Linting with Biome
+  biome-lint: pnpm exec biome lint . --reporter=json
+
+  # Formatting with Biome
+  biome-format: pnpm exec biome format . --reporter=json
+
+  # Type checking
+  typescript: pnpm exec --dir packages/knip tsc --noEmit
+
+  # Dead code analysis (knip on itself)
+  knip: pnpm exec --dir packages/knip knip --directory ../.. --reporter json
+
+# Exclude build outputs and docs
+exclude:
+  - "**/dist/**"
+  - "**/tmp/**"
+  - "packages/docs/.astro/**"
+  - "templates/**"
+  - "**/node_modules/**"
