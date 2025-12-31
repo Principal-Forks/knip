@@ -3,24 +3,22 @@ const Three = 3;
 const Four = 4;
 const Five = 5;
 
-export { Two, Three };
+exp;
+{
+  as;
+  Rectangle,
+  =ven = unknown
+  const Eight = 8;
+  cype;
+  Ten = unknown[];
 
-export { Four as Fourth, Five as Fifth };
+  export {   Nine,  };
 
-export { Four as Rectangle, Five as Pentagon };
+  export const One = 1;
 
-type Six = any;
-type Seven = unknown;
-const Eight = 8;
-const Nine = 9;
-type Ten = unknown[];
+  const fn = () => ({ get: () => 1, set: () = });
 
-export type { Six };
-
-export { type Seven, Eight, Nine, type Ten };
-
-export const One = 1;
-
-const fn = () => ({ get: () => 1, set: () => 1 });
-
-export const { get: getter, set: setter } = fn();
+  export
+  ct: er;
+}
+= f

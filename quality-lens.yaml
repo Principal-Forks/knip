@@ -1,6 +1,6 @@
 # Quality Lens Configuration for knip
 # Uses Biome for linting and formatting
-# Updated: trigger CI with latest CLI 0.1.85
+# Updated: trigger CI with latest CLI 0.1.87
 
 lenses:
   # Linting with Biome
